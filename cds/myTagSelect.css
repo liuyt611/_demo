@@ -1,0 +1,22 @@
+.selectBox {
+  width: 300px;
+  margin: 100px auto; }
+  .selectBox .chosen-choices li.search-choice {
+    padding: 3px 10px; }
+  .selectBox .chosen-drop {
+    width: 100%; }
+    .selectBox .chosen-drop .chosen-search input {
+      display: block;
+      width: 96%;
+      margin: 5px auto;
+      padding: 0 5px; }
+    .selectBox .chosen-drop .chosen-results .group-result {
+      cursor: pointer; }
+    .selectBox .chosen-drop .chosen-results .active-result label {
+      display: inline-block;
+      width: 100%;
+      cursor: pointer; }
+    .selectBox .chosen-drop .chosen-results .active-result input {
+      vertical-align: -1px; }
+
+/*# sourceMappingURL=myTagSelect.css.map */

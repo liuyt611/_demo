@@ -1,0 +1,67 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, center, u, b, i {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+html {
+  height: 100%; }
+
+.wrap {
+  width: 1000px;
+  height: 600px;
+  border: 1px solid #ddd;
+  margin: 50px auto;
+  font-size: 14px; }
+  .wrap .date {
+    margin: 20px; }
+    .wrap .date select {
+      float: left; }
+    .wrap .date ul {
+      float: right; }
+      .wrap .date ul li {
+        float: left;
+        margin: 0 10px; }
+        .wrap .date ul li span {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border: 1px solid #ddd;
+          margin-right: 5px;
+          vertical-align: -2px; }
+          .wrap .date ul li span.s1 {
+            background: #ddd; }
+          .wrap .date ul li span.s2 {
+            background: #fff; }
+          .wrap .date ul li span.s3 {
+            background: #999; }
+          .wrap .date ul li span.s4 {
+            background: #333; }
+  .wrap #timeTable table {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    text-align: center; }
+    .wrap #timeTable table th {
+      text-align: center;
+      font-weight: normal; }
+    .wrap #timeTable table tr, .wrap #timeTable table td {
+      border: 1px solid #ddd; }
+
+/*# sourceMappingURL=task1.css.map */

@@ -1,0 +1,40 @@
+.selectBox{
+    width:300px;
+    margin:100px auto;
+    .chosen-choices{
+        .search-field{
+            input{
+                // width:100%;
+            }
+        }
+        li.search-choice{
+            padding:3px 10px;
+        }
+    }
+    .chosen-drop{
+        width:100%;
+        .chosen-search{
+            input{
+                display:block;
+                width:96%;
+                margin:5px auto;
+                padding:0 5px;
+            }
+        }
+        .chosen-results{
+            .group-result{
+                cursor: pointer;
+            }
+            .active-result{
+                label{
+                    display:inline-block;
+                    width:100%;
+                    cursor: pointer;
+                }
+                input{
+                    vertical-align:-1px; 
+                }
+            }
+        }
+    }
+}

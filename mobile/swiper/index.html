@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Swiper demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	    <!-- Link Swiper's CSS -->
+	    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	    <link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="swiper-container swiper-container-w">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">第一页 <button class="click">点击跳转</button></div>
+		        <div class="swiper-slide">
+		            <!-- - - - - - --> 
+		            <div class="swiper-container swiper-container-h">
+		                <div class="swiper-wrapper">
+		                    <div class="swiper-slide">第二页第一屏</div>
+		                    <div class="swiper-slide">
+		                        <div class="swiper-container swiper-container-v">
+		                            <div class="swiper-wrapper">
+		                                <div class="swiper-slide">第二页第2屏 横1</div>
+		                                <div class="swiper-slide">第二页第2屏 横2</div>
+		                                <div class="swiper-slide">第二页第2屏 横3</div>
+		                                <div class="swiper-slide">第二页第2屏 横4</div>
+		                                <div class="swiper-slide">第二页第2屏 横5</div>
+		                            </div>
+		                            <div class="swiper-pagination swiper-pagination-v"></div>
+		                        </div>
+		                    </div>
+		                    <div class="swiper-slide">第二页第3屏</div>
+		                    <div class="swiper-slide">
+		                    	<div class="swiper-container swiper-container-v">
+		                    	    <div class="swiper-wrapper">
+		                    	        <div class="swiper-slide">第si页第3屏 横1</div>
+		                    	        <div class="swiper-slide">第si页第3屏 横2</div>
+		                    	        <div class="swiper-slide">第si页第3屏 横3</div>
+		                    	    </div>
+		                    	    <div class="swiper-pagination swiper-pagination-v"></div>
+		                    	</div>
+		                    </div>
+		                </div>
+		                <!-- Add Pagination -->
+		                <!-- <div class="swiper-pagination swiper-pagination-h"></div> -->
+		            </div>
+		            <!-- - - - - - -->
+		        </div>
+		        <div class="swiper-slide">第三页</div>
+		        <div class="swiper-slide">第四页</div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination swiper-pagination-h"></div>
+		</div>
+
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script src="js/index.js"></script>
+
+	</body>
+</html>

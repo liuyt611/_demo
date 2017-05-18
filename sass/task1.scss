@@ -1,0 +1,102 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, center, u, b, i {
+  margin: 0;
+  padding: 0; 
+}
+ul,li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,b{
+	font-weight:normal;
+}
+.clearfix:after {  
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+html{
+    height:100%;
+}
+
+.wrap{
+    width:1000px;
+    border:1px solid #ddd;
+    margin:50px auto;
+    font-size:14px;
+    padding:20px;
+    .date{
+        margin-bottom:20px;
+        select{
+            float:left;
+        }
+        ul{
+            float:right;
+            li{
+                float:left;
+                margin:0 10px;
+                span{
+                    display:inline-block;
+                    width:12px;
+                    height:12px;
+                    border:1px solid #ddd;
+                    margin-right:5px;
+                    vertical-align: -2px;
+                    &.s1{
+                        background:#ebebeb;
+                    }
+                    &.s2{
+                        background:#fff;
+                    }
+                    &.s3{
+                        background:#c0c0c0;
+                    }
+                    &.s4{
+                        background:#999;
+                    }
+                }
+            }
+        }
+    }
+    #timeTable{
+        table{
+            width:100%;
+            border:1px solid #ddd;
+            text-align: center;
+            tr{
+                height:30px;
+                th{
+                    text-align: center;
+                    font-weight:normal;
+                }
+                td{
+                    cursor: pointer;
+                    &.disabled{
+                        background:#ebebeb;
+                        cursor:no-drop;
+                    }
+                    &.myTime{
+                        background:#999;
+                    }
+                    &.othersTime{
+                        background:#c0c0c0;
+                        cursor:no-drop;
+                    }
+                }
+            }
+        }
+        
+    }
+    .information{
+        margin-top:100px;
+        img{
+            display:block;
+            margin:10px 0;
+        }
+    }
+}

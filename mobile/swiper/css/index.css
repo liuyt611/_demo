@@ -1,0 +1,18 @@
+.swiper-container-vertical>.swiper-pagination-bullets{
+	width: auto;
+	height:20px;
+	bottom:0px;
+	top:auto;
+	left:50%;
+	margin-left:-100px;
+	right:auto;
+}
+.swiper-container-vertical>.swiper-pagination-bullets span.swiper-pagination-bullet{
+	width:40px;
+	height:20px;
+	float: left;
+	margin:0 5px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom:40px;
+}

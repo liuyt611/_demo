@@ -1,0 +1,42 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, center, u, b, i {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, b {
+  font-weight: normal; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+html {
+  height: 100%; }
+
+.wrap {
+  width: 1200px;
+  margin: 50px auto; }
+  .wrap #timePicker select {
+    width: 100px; }
+  .wrap #timePicker em {
+    margin: 0 10px;
+    font-style: normal; }
+  .wrap #timePicker .chosen-container .chosen-drop {
+    width: 100px; }
+  .wrap .information {
+    margin-top: 100px; }
+    .wrap .information img {
+      display: block;
+      margin: 10px 0; }
+
+/*# sourceMappingURL=task8.css.map */

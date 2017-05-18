@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="telephone=no" name="format-detection"/>
+	<title>mobile_common</title>
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="title">
+            <span id="area">北京</span>
+            标题
+            <span id="filter">筛选</span>
+        </div>
+        <div class="list" id="list">
+            <img src="../images/car0.png" alt="">
+            <p>段落一</p>
+            <img src="../images/car0.png" alt="">
+            <p>段落二</p>
+            <img src="../images/car0.png" alt="">
+            <p>段落三</p>
+            <img src="../images/car0.png" alt="">
+            <p>段落四</p>
+            <img src="../images/car0.png" alt="">
+            <p>段落五</p>
+            <img src="../images/car0.png" alt="">
+        </div>       
+        <!-- 倒计时 -->
+        <div id="countdown"></div>
+        <!-- 倒计时 end -->
+        <!-- 加载更多 -->
+        <div class="more" id="more">加载更多</div>
+        <!-- 加载更多 end -->
+    </div>
+    <!-- 地区弹层 -->
+    <div id="popupAre">
+        <header></header>
+        <input type="text">
+        <div class="city_wrap">
+            <section class="m-line-box">
+                <!-- title start -->
+                <div class="m-tabs-box">
+                    <ul class="m-tabs">
+                        <li>直辖市</li>
+                    </ul>
+                </div>
+                <!-- title end -->
+                <ul class="m-change-city" change-city='city'>
+                    <li><span data-code="2_201">北京</span></li>
+                    <li><span data-code="24_2401">上海</span></li>
+                    <li><span data-code="26_2601">天津</span></li>
+                    <li><span data-code="31_3101">重庆</span></li>
+                </ul>
+            </section>
+            <section class="m-line-box">
+                <div class="m-tabs-box">
+                    <ul class="m-tabs">
+                        <li>安徽省</li>
+                    </ul>
+                </div>
+                <ul class="m-change-city" change-city="city">
+                    <li><span data-code="101">合肥</span></li>
+                    <li><span data-code="102">安庆</span></li>
+                    <li><span data-code="103">蚌埠</span></li>
+                    <li><span data-code="104">巢湖</span></li>
+                    <li><span data-code="105">池州</span></li>
+                    <li><span data-code="106">阜阳</span></li>
+                    <li><span data-code="107">淮北</span></li>
+                    <li><span data-code="108">淮南</span></li>
+                    <li><span data-code="109">六安</span></li>
+                    <li><span data-code="110">马鞍山</span></li>
+                    <li><span data-code="113">铜陵</span></li>
+                    <li><span data-code="114">芜湖</span></li>
+                    <li><span data-code="115">宣城</span></li>
+                    <li><span data-code="116">滁州</span></li>
+                    <li><span data-code="118">黄山</span></li>
+                    <li><span data-code="120">宿州</span></li>
+                    <li><span data-code="125">亳州</span></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- 地区弹层 end -->
+ 
+    <!-- 筛选弹层 -->
+    <div class="popupFilter popFilter" id="popupFilter">
+        <div class="bg popFilter" id="bg"></div>
+        <div class="popupCon popFilter" id="popupCon">
+            <h1>筛选 <span class="sure" id="sure">确定</span></h1>
+            <ul>
+                <li class="brand clearfix" id="brand">
+                    <span class="s1">品牌</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="price clearfix" id="price">
+                    <span class="s1">价格</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="level clearfix" id="level">
+                    <span class="s1">级别</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <!-- <li class="brand clearfix" id="brand">
+                    <span class="s1">品牌</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="price clearfix" id="price">
+                    <span class="s1">价格</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="level clearfix" id="level">
+                    <span class="s1">级别</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="brand clearfix" id="brand">
+                    <span class="s1">品牌</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="price clearfix" id="price">
+                    <span class="s1">价格</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="level clearfix" id="level">
+                    <span class="s1">级别</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="brand clearfix" id="brand">
+                    <span class="s1">品牌</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="price clearfix" id="price">
+                    <span class="s1">价格</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="level clearfix" id="level">
+                    <span class="s1">级别</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="brand clearfix" id="brand">
+                    <span class="s1">品牌</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="price clearfix" id="price">
+                    <span class="s1">价格</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li>
+                <li class="level clearfix" id="level">
+                    <span class="s1">级别</span>
+                    <span class="s2"><span class="text2">不限</span><b class="icon-next"></b></span>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- 筛选弹层 end -->
+    
+
+<script src="http://bigstatic.bitautoimg.com/base/seajs/2.3.0/sea.js"></script>
+<script>
+    // Set configuration
+    seajs.config({
+        base: "http://bigstatic.bitautoimg.com/",
+        alias: {
+            "jquery": "base/jquery/1.11.2/jquery.js"
+        },
+        map: [[/^(.*\.(?:css|js))(.*)$/i, '$1?v=201500002013']]
+    });
+    seajs.use("http://bigstatic.bitautoimg.com/apps/_demo/js/pages/demo/main");
+
+
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>日期选择</title>
+	    <link rel="stylesheet" href="../css/task8.css">
+	    <link href=" http://192.168.56.84/base/jquery.chosen/1.4.2/chosen.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div id="timePicker">
+			</div>
+
+			<div class="information">
+				<p>调用方式:</p>
+				<div>
+<pre>
+    $('#timePicker').task8({
+	    'startTime':'2013-6',//设置起始时间
+	    'timeDelay':'12'//可选的时间区间（如：12 即为12个月，例：2013-6~2014-5）
+    });
+</pre>
+				</div>
+				<p>思维导图:</p>
+				<img src="../images/task8.jpg" width="1200px" />
+				<p>要求:</p>
+				<img src="../images/task8-.jpg" />
+			</div>
+		</div>
+	    <script src="http://192.168.56.84/base/seajs/2.3.0/sea.js"></script>
+	    <script>
+	    // Set configuration
+	    seajs.config({
+	        base: "http://192.168.56.84",
+	        alias: {
+	            "jquery": "base/jquery/1.11.2/jquery.js",
+	            "chosen": "base/jquery.chosen/1.4.2/chosen.js"
+	        }
+	    });
+	    seajs.use("http://192.168.56.84/apps/_demo/js/pages/task8/main");
+	    </script>
+	</body>
+</html>
+
