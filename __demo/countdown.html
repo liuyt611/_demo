@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta content="telephone=no" name="format-detection"/>
+	<title>测试</title>
+	<script type="text/javascript" src="../../../base/jquery/1.11.3-nocmd/jquery.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<h3>手机端的倒计时（可用于web）</h3>
+	<div time-down="countdown"></div>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$(function(){
+
+		var _this={
+			countdown:function(y,m,d,h,_m,s,activety){
+				//倒计时
+			    var t = setInterval(function(){
+					today = new Date().getTime();
+					closingDate = new Date(y,m,d,h,_m,s).getTime();
+					difference = (closingDate - today) / (24*60*60*1000);
+					if(difference <= 3){
+						var days = parseInt(difference),
+							hours = parseInt((difference - days) * 24),
+							minutes = parseInt((difference - days - hours/24) * 24 * 60),
+							seconds = parseInt((difference - days - hours/24 -minutes/24/60) * 24 * 60 * 60);
+						$('.'+ activety +' [time-down="countdown"]').html('剩余<b class="b1">'+ days +'</b>天<b class="b2">'+ hours +'</b>小时<b class="b3">'+ minutes +'</b>分<b class="b4">'+ seconds +'</b>秒');
+						if(seconds <= 0 && minutes <= 0 && hours <= 0 && days <= 0){
+							$('.'+ activety +' [time-down="countdown"]').text('已结束');
+		                    $('.'+ activety +' .btn').addClass('grey').html('已停止报名');
+		                    $('.'+ activety +' .icon').css('color','#949494');
+							clearInterval(t);	
+						}
+					}else{
+						var days = Math.ceil(difference);
+						$('.'+ activety +' [time-down="countdown"]').html('剩余<b class="b1">'+ days +'</b>天');
+					}
+				},1000)
+		    }
+		}
+		//时间转换--此处的时间转换，主要考虑到了移动端的兼容性new Date(2015,12,23,18,20,59)
+		var end_time="2015-12-25 17:50:00",
+			ymd = end_time.split(' ')[0],
+			y = ymd.split('-')[0],
+			m = ymd.split('-')[1] - 1,
+			d = ymd.split('-')[2],
+			hms = end_time.split(' ')[1],
+			h = hms.split(':')[0],
+			_m = hms.split(':')[1],
+			s = hms.split(':')[2]
+
+		_this.countdown(y,m,d,h,_m,s,'wrap')
+	})
+</script>
